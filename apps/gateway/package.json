@@ -1,0 +1,40 @@
+{
+  "name": "@move-ops/gateway",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format-and-lint": "pnpm format && pnpm lint",
+    "type-check": "tsc -p tsconfig.json --noEmit"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@paralleldrive/cuid2": "^3.3.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "http-proxy-middleware": "^3.0.5",
+    "pino": "^10.3.1",
+    "pino-http": "^11.0.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.3",
+    "@types/supertest": "^7.2.0",
+    "eslint": "^10.0.2",
+    "prettier": "^3.8.1",
+    "supertest": "^7.2.2",
+    "tsoa": "6.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}

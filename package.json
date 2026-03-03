@@ -1,0 +1,24 @@
+{
+  "name": "move-ops",
+  "private": true,
+  "version": "0.1.0",
+  "description": "MoveOps monorepo",
+  "packageManager": "pnpm@10",
+  "scripts": {
+    "dev": "pnpm -r --parallel --if-present run dev",
+    "build": "pnpm -r --if-present run build",
+    "test": "pnpm -r --if-present run test",
+    "lint": "pnpm -r --if-present run lint",
+    "lint:fix": "pnpm -r --if-present run lint:fix",
+    "format": "pnpm -r --if-present run format",
+    "format:check": "pnpm -r --if-present run format:check",
+    "format-and-lint": "pnpm format && pnpm lint",
+    "type-check": "pnpm -r --if-present run type-check"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.2",
+    "globals": "^17.4.0",
+    "typescript-eslint": "^8.56.1"
+  }
+}
